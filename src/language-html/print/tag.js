@@ -95,7 +95,7 @@ function printClosingTagEndMarker(node, options) {
     case "interpolation":
       return "}}";
     case "element":
-      if (node.isSelfClosing) {
+      if (node.isSelfClosing && !node.tagDefinition.isVoid) {
         return "/>";
       }
     // fall through
@@ -214,7 +214,7 @@ function printAttributes(path, options, print) {
   const node = path.getValue();
 
   if (!isNonEmptyArray(node.attrs)) {
-    return node.isSelfClosing
+    return node.isSelfClosing && !node.tagDefinition.isVoid
       ? /**
          *     <br />
          *        ^
@@ -281,14 +281,14 @@ function printAttributes(path, options, print) {
       needsToBorrowLastChildClosingTagEndMarker(node.parent)) ||
     forceNotToBreakAttrContent
   ) {
-    parts.push(node.isSelfClosing ? " " : "");
+    parts.push(node.isSelfClosing && !node.tagDefinition.isVoid ? " " : "");
   } else {
     parts.push(
       options.bracketSameLine
-        ? node.isSelfClosing
+        ? node.isSelfClosing && !node.tagDefinition.isVoid
           ? " "
           : ""
-        : node.isSelfClosing
+        : node.isSelfClosing && !node.tagDefinition.isVoid
         ? line
         : softline
     );
