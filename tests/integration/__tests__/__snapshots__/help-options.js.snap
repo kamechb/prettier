@@ -56,6 +56,19 @@ exports[`show detailed usage with --help check (stdout) 1`] = `
 
 exports[`show detailed usage with --help check (write) 1`] = `Array []`;
 
+exports[`show detailed usage with --help close-tag-new-line (stderr) 1`] = `""`;
+
+exports[`show detailed usage with --help close-tag-new-line (stdout) 1`] = `
+"--close-tag-new-line
+
+  Force break close tag into new line when open tag has a break
+
+Default: false
+"
+`;
+
+exports[`show detailed usage with --help close-tag-new-line (write) 1`] = `Array []`;
+
 exports[`show detailed usage with --help color (stderr) 1`] = `""`;
 
 exports[`show detailed usage with --help color (stdout) 1`] = `
@@ -644,6 +657,19 @@ exports[`show detailed usage with --help version (stdout) 1`] = `
 `;
 
 exports[`show detailed usage with --help version (write) 1`] = `Array []`;
+
+exports[`show detailed usage with --help void-elements-add-solidus (stderr) 1`] = `""`;
+
+exports[`show detailed usage with --help void-elements-add-solidus (stdout) 1`] = `
+"--void-elements-add-solidus
+
+  Add solidus character in void elements
+
+Default: true
+"
+`;
+
+exports[`show detailed usage with --help void-elements-add-solidus (write) 1`] = `Array []`;
 
 exports[`show detailed usage with --help vue-indent-script-and-style (stderr) 1`] = `""`;
 

@@ -36,4 +36,18 @@ module.exports = {
     default: false,
     description: "Indent script and style tags in Vue files.",
   },
+  voidElementsAddSolidus: {
+    since: "2.6.0",
+    categroy: CATEGORY_HTML,
+    type: "boolean",
+    default: true,
+    description: "Add solidus character in void elements",
+  },
+  closeTagNewLine: {
+    since: "2.6.0",
+    categroy: CATEGORY_HTML,
+    type: "boolean",
+    default: false,
+    description: "Force break close tag into new line when open tag has a break",
+  }
 };

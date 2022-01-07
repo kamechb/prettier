@@ -102,6 +102,10 @@ Object {
       "default": true,
       "type": "boolean",
     },
+    "closeTagNewLine": Object {
+      "default": false,
+      "type": "boolean",
+    },
     "cursorOffset": Object {
       "default": -1,
       "range": Object {
@@ -267,6 +271,10 @@ Object {
     },
     "useTabs": Object {
       "default": false,
+      "type": "boolean",
+    },
+    "voidElementsAddSolidus": Object {
+      "default": true,
       "type": "boolean",
     },
     "vueIndentScriptAndStyle": Object {
@@ -799,6 +807,15 @@ exports[`CLI --support-info (stdout) 1`] = `
       \\"type\\": \\"boolean\\"
     },
     {
+      \\"categroy\\": \\"HTML\\",
+      \\"default\\": false,
+      \\"description\\": \\"Force break close tag into new line when open tag has a break\\",
+      \\"name\\": \\"closeTagNewLine\\",
+      \\"pluginDefaults\\": {},
+      \\"since\\": \\"2.6.0\\",
+      \\"type\\": \\"boolean\\"
+    },
+    {
       \\"category\\": \\"Special\\",
       \\"default\\": -1,
       \\"description\\": \\"Print (to stderr) where a cursor at the given position would move to after formatting.\\\\nThis option cannot be used with --range-start and --range-end.\\",
@@ -1123,6 +1140,15 @@ exports[`CLI --support-info (stdout) 1`] = `
       \\"name\\": \\"useTabs\\",
       \\"pluginDefaults\\": {},
       \\"since\\": \\"1.0.0\\",
+      \\"type\\": \\"boolean\\"
+    },
+    {
+      \\"categroy\\": \\"HTML\\",
+      \\"default\\": true,
+      \\"description\\": \\"Add solidus character in void elements\\",
+      \\"name\\": \\"voidElementsAddSolidus\\",
+      \\"pluginDefaults\\": {},
+      \\"since\\": \\"2.6.0\\",
       \\"type\\": \\"boolean\\"
     },
     {

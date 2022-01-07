@@ -34,6 +34,11 @@ Object {
           "description": "Print spaces between brackets.",
           "type": "boolean",
         },
+        "closeTagNewLine": Object {
+          "default": false,
+          "description": "Force break close tag into new line when open tag has a break",
+          "type": "boolean",
+        },
         "cursorOffset": Object {
           "default": -1,
           "description": "Print (to stderr) where a cursor at the given position would move to after formatting.
@@ -408,6 +413,11 @@ in order for it to be formatted.",
         "useTabs": Object {
           "default": false,
           "description": "Indent with tabs instead of spaces.",
+          "type": "boolean",
+        },
+        "voidElementsAddSolidus": Object {
+          "default": true,
+          "description": "Add solidus character in void elements",
           "type": "boolean",
         },
         "vueIndentScriptAndStyle": Object {
