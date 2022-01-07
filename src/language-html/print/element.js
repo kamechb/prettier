@@ -159,7 +159,11 @@ function printElement(path, options, print) {
 
   if (node.children.length === 0) {
     return printTag(
-      node.hasDanglingSpaces && node.isDanglingSpaceSensitive ? line : ""
+      node.hasDanglingSpaces && node.isDanglingSpaceSensitive
+        ? line
+        : !node.isSelfClosing && options.closeTagNewLine
+        ? ifBreak(softline, "", { groupId: attrGroupId })
+        : ""
     );
   }
 

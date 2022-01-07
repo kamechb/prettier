@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`close-tag.html - {"closeTagNewLine":true,"singleAttributePerLine":true,"bracketSameLine":true,"htmlWhitespaceSensitivity":"ignore"} format 1`] = `
+====================================options=====================================
+bracketSameLine: true
+closeTagNewLine: true
+htmlWhitespaceSensitivity: "ignore"
+parsers: ["html"]
+printWidth: 80
+singleAttributePerLine: true
+                                                                                | printWidth
+=====================================input======================================
+<div class="wrapper" id="main" data-a="aaaaaaaaa" data-b="bbbbbbbbb" data-c="ccccccccccccccccccc"></div>
+<span id="name" class="name">Jack</span>
+<p class="article" id="article">article content</p>
+<app-name class="app" id="app"></app-name>
+<link href="/aaaa.css" rel="stylesheet">
+<br>
+
+=====================================output=====================================
+<div
+  class="wrapper"
+  id="main"
+  data-a="aaaaaaaaa"
+  data-b="bbbbbbbbb"
+  data-c="ccccccccccccccccccc">
+</div>
+<span
+  id="name"
+  class="name">
+  Jack
+</span>
+<p
+  class="article"
+  id="article">
+  article content
+</p>
+<app-name
+  class="app"
+  id="app">
+</app-name>
+<link
+  href="/aaaa.css"
+  rel="stylesheet" />
+<br />
+
+================================================================================
+`;
+
+exports[`close-tag.html - {"closeTagNewLine":true,"singleAttributePerLine":true,"htmlWhitespaceSensitivity":"ignore"} format 1`] = `
+====================================options=====================================
+closeTagNewLine: true
+htmlWhitespaceSensitivity: "ignore"
+parsers: ["html"]
+printWidth: 80
+singleAttributePerLine: true
+                                                                                | printWidth
+=====================================input======================================
+<div class="wrapper" id="main" data-a="aaaaaaaaa" data-b="bbbbbbbbb" data-c="ccccccccccccccccccc"></div>
+<span id="name" class="name">Jack</span>
+<p class="article" id="article">article content</p>
+<app-name class="app" id="app"></app-name>
+<link href="/aaaa.css" rel="stylesheet">
+<br>
+
+=====================================output=====================================
+<div
+  class="wrapper"
+  id="main"
+  data-a="aaaaaaaaa"
+  data-b="bbbbbbbbb"
+  data-c="ccccccccccccccccccc"
+>
+</div>
+<span
+  id="name"
+  class="name"
+>
+  Jack
+</span>
+<p
+  class="article"
+  id="article"
+>
+  article content
+</p>
+<app-name
+  class="app"
+  id="app"
+>
+</app-name>
+<link
+  href="/aaaa.css"
+  rel="stylesheet"
+/>
+<br />
+
+================================================================================
+`;
+
+exports[`close-tag.html - {"closeTagNewLine":true} format 1`] = `
+====================================options=====================================
+closeTagNewLine: true
+parsers: ["html"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<div class="wrapper" id="main" data-a="aaaaaaaaa" data-b="bbbbbbbbb" data-c="ccccccccccccccccccc"></div>
+<span id="name" class="name">Jack</span>
+<p class="article" id="article">article content</p>
+<app-name class="app" id="app"></app-name>
+<link href="/aaaa.css" rel="stylesheet">
+<br>
+
+=====================================output=====================================
+<div
+  class="wrapper"
+  id="main"
+  data-a="aaaaaaaaa"
+  data-b="bbbbbbbbb"
+  data-c="ccccccccccccccccccc"
+>
+</div>
+<span id="name" class="name">Jack</span>
+<p class="article" id="article">article content</p>
+<app-name class="app" id="app"></app-name>
+<link href="/aaaa.css" rel="stylesheet" />
+<br />
+
+================================================================================
+`;
+
+exports[`close-tag.html format 1`] = `
+====================================options=====================================
+parsers: ["html"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<div class="wrapper" id="main" data-a="aaaaaaaaa" data-b="bbbbbbbbb" data-c="ccccccccccccccccccc"></div>
+<span id="name" class="name">Jack</span>
+<p class="article" id="article">article content</p>
+<app-name class="app" id="app"></app-name>
+<link href="/aaaa.css" rel="stylesheet">
+<br>
+
+=====================================output=====================================
+<div
+  class="wrapper"
+  id="main"
+  data-a="aaaaaaaaa"
+  data-b="bbbbbbbbb"
+  data-c="ccccccccccccccccccc"
+></div>
+<span id="name" class="name">Jack</span>
+<p class="article" id="article">article content</p>
+<app-name class="app" id="app"></app-name>
+<link href="/aaaa.css" rel="stylesheet" />
+<br />
+
+================================================================================
+`;

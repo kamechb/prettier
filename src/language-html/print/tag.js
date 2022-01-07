@@ -82,6 +82,13 @@ function printClosingTagStartMarker(node, options) {
   }
 }
 
+function selfClosingElementsAddSolidus(node, options) {
+  return (
+    node.isSelfClosing &&
+    (!node.tagDefinition.isVoid || options.voidElementsAddSolidus)
+  );
+}
+
 function printClosingTagEndMarker(node, options) {
   if (shouldNotPrintClosingTag(node, options)) {
     return "";
@@ -95,7 +102,7 @@ function printClosingTagEndMarker(node, options) {
     case "interpolation":
       return "}}";
     case "element":
-      if (node.isSelfClosing) {
+      if (selfClosingElementsAddSolidus(node, options)) {
         return "/>";
       }
     // fall through
@@ -214,7 +221,7 @@ function printAttributes(path, options, print) {
   const node = path.getValue();
 
   if (!isNonEmptyArray(node.attrs)) {
-    return node.isSelfClosing
+    return selfClosingElementsAddSolidus(node, options)
       ? /**
          *     <br />
          *        ^
@@ -281,14 +288,14 @@ function printAttributes(path, options, print) {
       needsToBorrowLastChildClosingTagEndMarker(node.parent)) ||
     forceNotToBreakAttrContent
   ) {
-    parts.push(node.isSelfClosing ? " " : "");
+    parts.push(selfClosingElementsAddSolidus(node, options) ? " " : "");
   } else {
     parts.push(
       options.bracketSameLine
-        ? node.isSelfClosing
+        ? selfClosingElementsAddSolidus(node, options)
           ? " "
           : ""
-        : node.isSelfClosing
+        : selfClosingElementsAddSolidus(node, options)
         ? line
         : softline
     );

@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`void-elements.html - {"voidElementsAddSolidus":false,"singleAttributePerLine":true} format 1`] = `
+====================================options=====================================
+parsers: ["html"]
+printWidth: 80
+singleAttributePerLine: true
+voidElementsAddSolidus: false
+                                                                                | printWidth
+=====================================input======================================
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preload" href="/test.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/test-bold.woff2" as="font" type="font/woff2" crossorigin>
+<img src="/aaaa/bbbbb/ccccc.jpg" alt="" />
+
+=====================================output=====================================
+<meta
+  name="referrer"
+  content="strict-origin-when-cross-origin"
+>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=2, viewport-fit=cover"
+>
+<meta
+  name="referrer"
+  content="strict-origin-when-cross-origin"
+>
+<link
+  rel="preload"
+  href="/test.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+<link
+  rel="preload"
+  href="/test-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+<img
+  src="/aaaa/bbbbb/ccccc.jpg"
+  alt=""
+>
+
+================================================================================
+`;
+
+exports[`void-elements.html - {"voidElementsAddSolidus":false} format 1`] = `
+====================================options=====================================
+parsers: ["html"]
+printWidth: 80
+voidElementsAddSolidus: false
+                                                                                | printWidth
+=====================================input======================================
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preload" href="/test.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/test-bold.woff2" as="font" type="font/woff2" crossorigin>
+<img src="/aaaa/bbbbb/ccccc.jpg" alt="" />
+
+=====================================output=====================================
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=2, viewport-fit=cover"
+>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preload" href="/test.woff2" as="font" type="font/woff2" crossorigin>
+<link
+  rel="preload"
+  href="/test-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
+<img src="/aaaa/bbbbb/ccccc.jpg" alt="">
+
+================================================================================
+`;
+
+exports[`void-elements.html format 1`] = `
+====================================options=====================================
+parsers: ["html"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preload" href="/test.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/test-bold.woff2" as="font" type="font/woff2" crossorigin>
+<img src="/aaaa/bbbbb/ccccc.jpg" alt="" />
+
+=====================================output=====================================
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=2, viewport-fit=cover"
+/>
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<link
+  rel="preload"
+  href="/test.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/test-bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<img src="/aaaa/bbbbb/ccccc.jpg" alt="" />
+
+================================================================================
+`;

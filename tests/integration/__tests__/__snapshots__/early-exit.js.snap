@@ -64,6 +64,8 @@ Format options:
   --bracket-same-line      Put > of opening tags on the last line instead of on a new line.
                            Defaults to false.
   --no-bracket-spacing     Do not print spaces between brackets.
+  --close-tag-new-line     Force break close tag into new line when open tag has a break
+                           Defaults to false.
   --embedded-language-formatting <auto|off>
                            Control how Prettier formats quoted code embedded in the file.
                            Defaults to auto.
@@ -98,6 +100,9 @@ Format options:
                            Defaults to es5.
   --use-tabs               Indent with tabs instead of spaces.
                            Defaults to false.
+  --void-elements-add-solidus
+                           Add solidus character in void elements
+                           Defaults to true.
   --vue-indent-script-and-style
                            Indent script and style tags in Vue files.
                            Defaults to false.
@@ -232,6 +237,8 @@ Format options:
   --bracket-same-line      Put > of opening tags on the last line instead of on a new line.
                            Defaults to false.
   --no-bracket-spacing     Do not print spaces between brackets.
+  --close-tag-new-line     Force break close tag into new line when open tag has a break
+                           Defaults to false.
   --embedded-language-formatting <auto|off>
                            Control how Prettier formats quoted code embedded in the file.
                            Defaults to auto.
@@ -266,6 +273,9 @@ Format options:
                            Defaults to es5.
   --use-tabs               Indent with tabs instead of spaces.
                            Defaults to false.
+  --void-elements-add-solidus
+                           Add solidus character in void elements
+                           Defaults to true.
   --vue-indent-script-and-style
                            Indent script and style tags in Vue files.
                            Defaults to false.

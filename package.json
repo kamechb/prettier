@@ -18,7 +18,8 @@
     "index.js",
     "standalone.js",
     "src",
-    "bin"
+    "bin",
+    "bin-prettier.js"
   ],
   "dependencies": {
     "@angular/compiler": "12.2.15",
